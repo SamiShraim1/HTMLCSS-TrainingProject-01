@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Be Vietnam Pro;
+  background-color: #f7f7f8;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: calc(100% - 120px);
+  margin: auto;
+}
+
+@media screen and (max-width: 471px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* <!---- Header ----------------> */
+
+.header {
+  background-color: #f7f7f8;
+  border-bottom: 1px solid #f1f1f3;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  padding: 20px 0;
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header-left {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header a {
+  color: #262626;
+}
+
+.header .navbar .active {
+  padding: 14px 24px;
+  border-radius: 8px;
+  background-color: #f1f1f3;
+  flex-wrap: wrap;
+}
+
+.header .botton {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.botton .log-in {
+  padding: 14px 34px;
+  border-radius: 8px;
+  background-color: #ff9500;
+  color: #fff;
+}
+
+.header svg {
+  display: none;
+}
+
+.icon-header {
+  width: 34px;
+  height: 35px;
+}
+
+@media screen and (max-width: 900px) {
+  .header .navbar {
+    display: none;
+  }
+
+  .header svg {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header .botton {
+    gap: 10px;
+  }
+
+  .botton .log-in {
+    padding: 12px 20px;
+  }
+}
+
+/* <!---- footer ----------------> */
+
+.footer {
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer .footer-main {
+  display: grid;
+  padding: 30px 0;
+  border-bottom: 1px solid #f1f1f3;
+  align-self: stretch;
+}
+
+.footer .footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  color: #262626;
+}
+
+.footer .footer-left img {
+  display: flex;
+  width: 54px;
+  height: 55px;
+}
+
+.footer .Contact-lnfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer .Contact-lnfo-data {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer .footer-right {
+  display: flex;
+  gap: 40px;
+  width: calc(100% / 1.8);
+  justify-content: space-evenly;
+}
+
+.footer .footer-right-item {
+  display: grid;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer .footer-right-item .svgs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.footer .footer-right-item .svgs svg {
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+  border: 1px solid #f1f1f3;
+  background: #f7f7f8;
+  border-radius: 8px;
+}
+
+.icon-facebook,
+.icon-twitter,
+.icon-linkedin {
+  width: 24px;
+  height: 24px;
+  fill: #4c4c4d;
+  transition: fill 0.3s ease;
+}
+
+.icon-mail,
+.icon-phone,
+.icon-location {
+  width: 24px;
+  height: 25px;
+}
+
+@media screen and (max-width: 850px) {
+  .footer .footer-right {
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer .footer-right {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: stretch;
+  }
+
+  .footer .row {
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer .rights {
+    font-size: 14px;
+  }
+}

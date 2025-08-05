@@ -1,0 +1,291 @@
+/* <!---- Blog ----------------> */
+
+.Blogs {
+  padding: 20px 0;
+  margin-bottom: 80px;
+}
+
+.Blogs-main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  gap: 10px;
+}
+
+.Blogs-main h1 {
+  color: #262626;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.Blogs-main .Blogs-p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 38px;
+}
+
+.Blogs-main .Blogs-p a {
+  padding: 18px 24px;
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  background: #fcfcfd;
+  color: #262626;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.Blogs-main .Blogs-p p {
+  color: #59595a;
+  width: 1000px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.Blogs-info {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.Blog {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 30px) / 2);
+  background-color: #fff;
+  border-radius: 12px;
+  border: #f1f1f3;
+  padding: 50px;
+  gap: 15px;
+}
+
+.Blog img {
+  display: flex;
+  border-radius: 8px;
+  width: 100%;
+  height: 325px;
+  object-fit: cover;
+}
+
+.Blog-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-height: max-content;
+}
+
+.Blog-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.Blog-data span:first-of-type {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.Blog-data .span-1 {
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  padding: 10px 16px;
+  background: #fff;
+  color: #4c4c4d;
+  font-size: 16px;
+}
+
+.Blog-data .span-2 {
+  font-size: 20px;
+  color: #262626;
+  font-weight: 700;
+}
+
+.Blog-data-p {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.Blog-info h3 {
+  color: #262626;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.Blog-info p {
+  color: #4c4c4d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.Blog .a {
+  margin-top: auto;
+}
+
+.Blog a {
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  background: #f7f7f8;
+  color: #262626;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .Blogs-main .Blogs-p p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .Blog {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 750px) and (min-width: 710px) {
+  .Blog img {
+    height: 158px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+  .Blog img {
+    height: 243px;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 710px) {
+  .Blog-data {
+    gap: 5px;
+  }
+
+  .Blog-info h3 {
+    font-size: 15px;
+  }
+
+  .Blog-info p {
+    font-size: 12px;
+  }
+
+  .Blog-data .span-1 {
+    padding: 10px 8px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .Blog {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .Blog img {
+    height: 145px;
+  }
+
+  .Blog-data {
+    gap: 5px;
+  }
+
+  .Blog-info h3 {
+    font-size: 15px;
+  }
+
+  .Blog-info p {
+    font-size: 12px;
+  }
+
+  .Blog-data .span-1 {
+    padding: 10px 8px;
+  }
+}
+
+@media screen and (max-width: 342px) {
+  .Blog-data .span-1 {
+    padding: 10px 8px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Blog-info a {
+    padding: 13px 11px;
+  }
+}
+
+
+.contact-form {
+  padding: 40px 0;
+  background-color: #fff;
+  border-top: 1px solid #f1f1f3;
+  margin-top: 50px;
+}
+
+.contact-form h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #262626;
+}
+
+.form-area {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #4c4c4d;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff9500;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff9500;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e68400;
+}
